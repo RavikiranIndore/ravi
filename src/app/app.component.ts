@@ -2,8 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { Home } from '../pages/home/home';
-import { Page2 } from '../pages/page2/page2';
+import { Home } from '../pages/home/home';  // Imported home page
+import { List } from '../pages/list/list';	// Changed by RK-T
 
 @Component({
   templateUrl: 'app.html'
@@ -11,7 +11,7 @@ import { Page2 } from '../pages/page2/page2';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Home;
+  rootPage: any = Home;		// Changed by RK-G
 
   pages: Array<{title: string, component: any}>;
 
@@ -20,8 +20,8 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: Home },
-      { title: 'Page Two', component: Page2 }
+      { title: 'Home', component: Home },	// Changed by RK-G
+      { title: 'List Page', component: List }	// Changed by RK-T
     ];
 
   }

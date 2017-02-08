@@ -1,14 +1,14 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { Home } from '../pages/home/home';
-import { Page2 } from '../pages/page2/page2';
+import { Home } from '../pages/home/home';	// Changed by RK-G
+import { List } from '../pages/list/list';	// Changed by RK-T
 
 @NgModule({
   declarations: [
     MyApp,
-    Home,
-    Page2
+    Home,	// Changed by RK-G
+    List	// Changed by RK-T
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -16,8 +16,8 @@ import { Page2 } from '../pages/page2/page2';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    Home,
-    Page2
+    Home,	// Changed by RK-G
+    List	// Changed by RK-T
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
