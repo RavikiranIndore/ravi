@@ -3,7 +3,7 @@ import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
 import { Home } from '../pages/home/home';  // Imported home page
-import { List } from '../pages/list/list';	// Changed by RK-T
+import { List } from '../pages/list/list';
 
 @Component({
   templateUrl: 'app.html'
@@ -21,7 +21,7 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: Home },	// Changed by RK-G
-      { title: 'List Page', component: List }	// Changed by RK-T
+      { title: 'List', component: List }  // Changed by RK-T - Original
     ];
 
   }
